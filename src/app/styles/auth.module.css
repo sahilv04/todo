@@ -1,0 +1,31 @@
+.formWrapper {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.formWrapper h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.formWrapper input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formWrapper button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
