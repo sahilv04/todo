@@ -50,11 +50,11 @@ export default function TaskList({ tasks, onTaskUpdated }: TaskListProps) {
       console.error("Delete task error:", err);
     }
   };
-
+  console.log(tasks);
   return (
     <ul className={styles.list}>
       {tasks.map((task) => (
-        <li key={task._id} className={styles.item}>
+        <li key={task._id.toString()} className={styles.item}>
           <div>
             <h3 className={task.completed ? styles.completed : ""}>
               {task.title}
@@ -70,7 +70,7 @@ export default function TaskList({ tasks, onTaskUpdated }: TaskListProps) {
               {task.completed ? "Undo" : "Complete"}
             </button>
             <button
-              onClick={() => handleDelete(task._id!)}
+              onClick={() => handleDelete(task._id.toString()!)}
               className={styles.deleteButton}
             >
               Delete
